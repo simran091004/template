@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Simran's Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#calendar">Events</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Welcome to My Webspace</h2>
+    <p>This website demonstrates responsive design, styling, plugins, accessibility, and enhancements.</p>
+  </section>
+
+  <section id="carousel" aria-label="Image Carousel">
+    <div class="carousel">
+      <button onclick="prevSlide()">&#10094;</button>
+      <img id="carousel-img" src="neghbor hood walks.jpg" alt="Slideshow image">
+      <button onclick="nextSlide()">&#10095;</button>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="lab.jpg" alt="Project 1" />
+        <h3>Project One</h3>
+        <p>Brief description of the project.</p>
+      </div>
+      <div class="card">
+        <img src="walkspark.jpg" alt="Project 2" />
+        <h3>Project Two</h3>
+        <p>Brief description of the project.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="calendar">
+    <h2>Upcoming Events</h2>
+    <iframe 
+      src="https://calendar.google.com/calendar/embed?src=en.indian%23holiday%40group.v.calendar.google.com&ctz=Asia%2FKolkata"
+      style="border: 0" width="100%" height="300" frameborder="0" scrolling="no" title="Google Calendar">
+    </iframe>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contactForm" onsubmit="return validateForm()">
+      <label for="name">Name:</label>
+      <input id="name" name="name" type="text" required />
+
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Simran's Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
